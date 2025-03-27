@@ -27,7 +27,7 @@ int main(int ac, char **av)
     }
     while (1)
     {
-        input = readline("minishell$> ");
+        input = readline("\033[1;35m~Minishell$>\033[0m ");
         if (!input || ft_strcmp(input, "exit") == 0)
              break;
         if (*input)
